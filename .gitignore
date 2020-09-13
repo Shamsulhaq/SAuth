@@ -151,3 +151,4 @@ Pipfile
 
 # End of https://www.gitignore.io/api/node
 
+mail_info.py
