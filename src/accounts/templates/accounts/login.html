@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}Login || {{ block.super }}{% endblock title %}
+
+{% block content %}
+<div>
+    <h1>User Login</h1><hr/>
+    <div class="" align="" style="margin-left: 14rem;">
+        <div class="card" style="width: 40rem; margin-top: 2rem;">
+            <div class="card-header text-left"><b>User Login</b></div>
+            <div class="card-body">
+                {% include 'form.html' %}
+                <a href="{% url 'register' %}" class="float-left" style="text-decoration: none;">Create new account.</a>
+                <a href="{% url 'password_reset' %}" class="float-right" style="text-decoration: none;">Forger your password.</a>
+            </div><!-- end of card body -->
+        </div><!-- end of card -->
+        <div class="col-6" style="margin-top: 2rem; margin-left: 6rem;">
+            {% if messages %}
+            <div class="messages">
+                {% for message in messages %}
+                <p {% if message.tags %} class="text-center {{ message.tags }}"{% endif %}>{{ message }}</p>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

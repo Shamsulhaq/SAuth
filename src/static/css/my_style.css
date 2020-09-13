@@ -1,0 +1,13 @@
+a:hover{
+    text-decoration: none;
+}
+.margin_20{
+    margin: 20px;
+}
+.form_creation {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+}
+
+

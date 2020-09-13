@@ -1,0 +1,6 @@
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'shamsulcitycse@gmail.com'  # SET EMAIL
+EMAIL_HOST_PASSWORD = '742436S@m'  # SET PASSWORD OR APP PASSWORD
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
